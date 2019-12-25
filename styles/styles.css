@@ -1,10 +1,47 @@
+/* original materializecss color: #607d8b blue-grey */
+/* new materializecss color: #212121 grey darken-4 */
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
-
 main {
   flex: 1 0 auto;
 }
-      
+nav .brand-logo {
+  padding: 0 20px
+}
+.page-footer {
+  padding-top: 0;
+}
+.parallax img {
+  width: 150%
+}
+.typed-cursor.typed-cursor--blink {
+	animation: typedjsBlink 1.5s infinite !important;
+	-webkit-animation: typedjsBlink 1.5s infinite !important;
+	animation: typedjsBlink 1.5s infinite !important;
+}
+.typed-cursor {
+	animation: typedjsBlink 1.5s infinite !important;
+	-webkit-animation: typedjsBlink 1.5s infinite !important;
+	animation: typedjsBlink 1.5s infinite !important;
+}
+.typed-header {
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.8rem 0 1.68rem 0;
+}
+.unsplash-credit {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 4px 6px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, "Ubuntu", "Roboto", "Noto", "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  border-radius: 3px
+}

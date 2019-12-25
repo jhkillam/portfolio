@@ -1,2 +1,2 @@
 # portfolio
-This is for my public portfolio website. 
+This repo is for my public portfolio website, https://killam.dev.

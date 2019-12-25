@@ -10,62 +10,95 @@
   <title>killam.dev</title>
 </head>
 <body>
-  <header>
+
+  <header id="top">
     <div class="navbar-fixed">
       <nav>
-        <div class="nav-wrapper blue-grey z-depth-3">
-          <span class="brand-logo">killam.dev</span>
-          <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div class="nav-wrapper grey darken-4 z-depth-3">
+          <span class="brand-logo center">killam.dev</span>
         </div>
       </nav>
     </div>
-  
-    <ul class="sidenav" id="mobile">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
   </header>
 
-  <main class="container">
-    <h1>
-      Hello.
-    </h1>
-  </main>
-
-  <footer class="page-footer blue-grey">
-      <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
+  <main>
+    <div class="container">
+      <div class="typed-header">
+        <span id="typed"></span>
+      </div>
+      <p>
+        I'm Joseph Killam, I develop software for the web.
+      </p>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/dhe-haivan-JwLiLq24QbA-unsplash.jpg"></div>
+    </div>
+    <div class="container">
+      <a class="unsplash-credit" href="https://unsplash.com/@dhehaivan?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do-whatever-you-want high-resolution photos from dhe haivan"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">dhe haivan</span></a>
+      <ul class="collapsible popout">
+        <li>
+          <div class="collapsible-header">
+            <h3>About</h3>
+          </div>
+          <div class="collapsible-body">
+            <p>
+              I'm a software developer trained in modern web design. I began making websites at a young age, hosting them on sites like <a href="http://www.angelfire.lycos.com/" target="_blank">Angelfire</a> (yes it's still there, no it doesn't have HTTPS).
+            </p>
+            <p>
+              After spending much of my professional career managing sales teams, I decided to begin pursuring a new career in software development. For the last several years, I have studied languages, frameworks, & platforms such as: 
+            </p>
+            <div class="row">
               <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                <div class="col s6 right-align">
+                  <li>Javascript ES6</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                </div>
+                <div class="col s6">
+                  <li>PostgreSQL</li>
+                  <li>Python</li>
+                  <li>C++</li>
+                  <li>Git</li>
+                </div>
               </ul>
             </div>
+            
           </div>
-        </div>
-    <footer class="footer-copyright blue-grey">
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <h3>Portfolio</h3>
+          </div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <h3>Resume</h3>
+          </div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <h3>Contact</h3>
+          </div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="page-footer grey darken-4">
+    <footer class="footer-copyright grey darken-4">
       <div class="container">
-      © 2019 Joey Killam
-      <a class="grey-text text-lighten-4 right" href="#!">Contact</a>
+        <span class="grey-text text-lighten-4 left">killam.dev</span>
+        <span class="grey-text text-lighten-4 right">© 2019 Joseph Killam</span>
       </div>
     </footer>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script src="./scripts/typed-config.js"></script>
   <script src="./scripts/materialize.js"></script>
   <script src="./scripts/script.js"></script>
 </body>
