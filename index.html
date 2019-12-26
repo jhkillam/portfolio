@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./styles/materialize.min.css">
-  <link rel="stylesheet" href="./styles/styles.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
   <title>killam.dev</title>
 </head>
 <body>
@@ -53,7 +53,7 @@
           </div>
           <div class="collapsible-body">
             <p>
-              I'm a software developer trained in modern web design. I began making websites at a young age, hosting them on sites like <a href="http://www.angelfire.lycos.com/" target="_blank">Angelfire</a> (yes it's still there, no it doesn't have HTTPS).
+              I'm a software developer trained in modern web design. I began making websites at an early age, hosting them on sites like <a href="http://www.angelfire.lycos.com/" target="_blank">Angelfire</a> (yes it's still there, no it doesn't have HTTPS).
             </p>
             <p>
               After spending much of my professional career managing sales teams, I decided to begin pursuing a new career in software development. For the last several years, I have studied languages, frameworks, & platforms such as: 
@@ -88,23 +88,67 @@
             <h3>Portfolio</h3>
           </div>
           <div class="collapsible-body">
+            <!-- MONEY IN THE BANK -->
+            <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/money-in-the-bank.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Money in the Bank<i class="material-icons right">more_vert</i></span>
+                <p>React project that forecasts your future bank balance.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://jhkillam.github.io/react-money-in-the-bank/" target="_blank">Live Demo</a>
+                <a href="https://github.com/jhkillam/react-money-in-the-bank" target="_blank">Github</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Money in the Bank<i class="material-icons right">close</i></span>
+                <p>Money in the Bank was my Phase 3 project at <a href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a>. The core learning objective for this project was to create a web application using <a href="https://reactjs.org/" target="_blank">React</a>.</p>
+                <p>This was my first solo project, and I really enjoyed learning React while creating this web app. The concept is simple: enter your recurring income/expenses on the Transactions tab, then see how your budget affects your bank balance over time on the other tabs.</p>
+                <p>Significant future development is planned for this app.</p>
+              </div>
+            </div>
+            <!-- END MONEY IN THE BANK -->
+            <!-- BANKHUB -->
+            <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/bankhub.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">BankHub<i class="material-icons right">more_vert</i></span>
+                <p>CRUD operations with forms and user authentication.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://vimeo.com/381480878" target="_blank">Video Demo</a>
+                <a href="https://github.com/apnguyen11/doggo-bank" target="_blank">Github</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">BankHub<i class="material-icons right">close</i></span>
+                <p>BankHub was my Phase 2 group project at <a href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a>. The core learning objective for this project was to create a web application with primary focus on backend technologies such as <a href="https://nodejs.org/" target="_blank">Node.js</a>, <a href="https://expressjs.com/" target="_blank">Express</a>, <a href="https://knexjs.org/" target="_blank">Knex</a>, and <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>.</p>
+                <p>My primary role consisted of setting up the database (schema, migrations, and seeding), querying the database for CRUD operations related to transferring data between users, and rendering information from the database on the user account page.</p>
+              </div>
+            </div>
+            <!-- END BANKHUB -->
+            <!-- RENDERING RETURNS -->
             <div class="card sticky-action">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/rendering-returns.png">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Rendering Returns<i class="material-icons right">more_vert</i></span>
-                <p>A correlation of President Trump, Twitter, and the stock market.</p>
+                <p>A visualization of President Trump, Twitter, and the stock market.</p>
               </div>
               <div class="card-action">
-                <a href="http://renderingreturns.netlify.com/">Live Demo</a>
-                <a href="http://renderingreturns.netlify.com/">Live Demo</a>
+                <a href="http://renderingreturns.netlify.com/" target="_blank">Live Demo</a>
+                <a href="https://github.com/mosaic43/twitter-power" target="_blank">Github</a>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Rendering Returns<i class="material-icons right">close</i></span>
-                <p>I worked on Rendering Returns as part a group during my time at DigitalCrafts. </p>
+                <p>Rendering Returns was my Phase 1 group project at <a href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a>. The core learning objective for this project was to integrate JavaScript libraries and external APIs.</p>
+                <p>My primary role consisted of implementing the <a href="https://www.alphavantage.co/" target="_blank">Alpha Vantage</a> API for the stock data, and the stock ticker. One challenge I encountered was handling the API call limit for Alpha Vantage. To keep the site usable when the API call failed, I imported historical stock data to a JSON file and accessed that in place of the API response.</p> 
               </div>
             </div>
+            <!-- END RENDERING RETURNS -->
           </div>
         </li>
         <li>
