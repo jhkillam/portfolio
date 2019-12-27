@@ -55,13 +55,32 @@ nav .brand-logo {
   border-radius: 3px;
 }
 .hero-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 75vh;
+  opacity: 0;
   background-color: #212121;
+  animation-play-state: paused;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 .hero-text {
   text-align: center;
