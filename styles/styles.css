@@ -67,7 +67,7 @@ nav .brand-logo {
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-fill-mode:forwards;
 }
 
