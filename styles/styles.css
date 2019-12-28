@@ -132,6 +132,31 @@ nav .brand-logo {
   outline: none;
   border: none;
 }
+#tech-icons i {
+  position: relative;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#tech-icons i::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#tech-icons i:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+#tech-icons i:hover::after {
+    opacity: 1;
+}
 .jelly-icon-container i:hover {
   animation: jelly 0.5s;
 }
@@ -175,12 +200,12 @@ nav .brand-logo {
 .fa-github-square {
   color: #333
 }
-section {
+.content-section {
   background: linear-gradient(145deg, rgba(22, 22, 22, 0.02) 0%, rgba(22, 22, 22, 0.02) 58%,rgba(249, 249, 249, 0.02) 58%, rgba(249, 249, 249, 0.02) 90%,rgba(197, 197, 197, 0.02) 90%, rgba(197, 197, 197, 0.02) 93%,rgba(243, 243, 243, 0.02) 93%, rgba(243, 243, 243, 0.02) 99%,rgba(107, 107, 107, 0.02) 99%, rgba(107, 107, 107, 0.02) 100%),linear-gradient(311deg, rgba(157, 157, 157, 0.02) 0%, rgba(157, 157, 157, 0.02) 2%,rgba(234, 234, 234, 0.02) 2%, rgba(234, 234, 234, 0.02) 47%,rgba(57, 57, 57, 0.02) 47%, rgba(57, 57, 57, 0.02) 84%,rgba(181, 181, 181, 0.02) 84%, rgba(181, 181, 181, 0.02) 98%,rgba(128, 128, 128, 0.02) 98%, rgba(128, 128, 128, 0.02) 100%),linear-gradient(97deg, rgba(231, 231, 231, 0.02) 0%, rgba(231, 231, 231, 0.02) 35%,rgba(53, 53, 53, 0.02) 35%, rgba(53, 53, 53, 0.02) 46%,rgba(114, 114, 114, 0.02) 46%, rgba(114, 114, 114, 0.02) 71%,rgba(55, 55, 55, 0.02) 71%, rgba(55, 55, 55, 0.02) 99%,rgba(202, 202, 202, 0.02) 99%, rgba(202, 202, 202, 0.02) 100%),linear-gradient(90deg, rgb(250, 250, 250),rgb(243, 243, 243));
   max-width: 700px;
   margin: 0 auto 50px auto;
   padding: 10px;
-  border-radius: .5em;
+  border-radius: .5rem;
   -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
 }
@@ -188,8 +213,8 @@ h2 {
   text-align: center;
 }
 #portfolio * {
-  border-radius: .5em;
+  border-radius: .5rem;
 }
 .top-radius {
-  border-radius: .5em .5em 0 0 !important;
+  border-radius: .5rem .5rem 0 0 !important;
 }
